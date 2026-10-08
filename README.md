@@ -25,6 +25,9 @@ driver.find_element(By.XPATH,"//*[@value='Movies']/ancestor::div[1]/child::input
 time.sleep(5)
 driver.find_element(By.XPATH,"//*[@class='form-group'][6]/child::div/div[3]/input").click()
 time.sleep(5)
+dropdown= driver.find_element(By.XPATH,"//Select*[@id='msdd']")
+dropdown.select_by_visible_text("English")
+time.sleep(5)
 driver.find_element(By.XPATH,"//*[text()=' Submit ']").click()
 time.sleep(5)
 ```
